@@ -64,6 +64,21 @@ color: aquamarine;
     height: auto;
   }
 }
+@media (max-width: 400px) {
+  .logobar {
+    width: 30px;
+    height: auto;
+  }
+  .Navbar {
+    font-size: 5px; /* ลดขนาดตัวอักษรเมื่อหน้าจอย่อ */
+    font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
+    margin-right: 6px
+  }
+  .imagebar {
+    width: 10px;
+    height: auto;
+  }
+}
 
 /* หัวเรื่อง -------------------------------------------- */
 .bodyDev {
@@ -122,6 +137,15 @@ color: aquamarine;
   }
   .bodyFont2 {
     font-size: 10px; /* ขนาดตัวอักษรเป็น 12px */ 
+    font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
+  }
+}
+@media (max-width: 400px) {
+  .bodyFont1 {
+    font-size: 10px; /* ลดขนาดตัวอักษรเมื่อหน้าจอย่อ */
+  }
+  .bodyFont2 {
+    font-size: 6px; /* ขนาดตัวอักษรเป็น 12px */ 
     font-family: 'Mitr', sans-serif; /* กำหนดฟอนต์เป็น Mitr */
   }
 }
