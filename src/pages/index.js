@@ -96,7 +96,7 @@ const MyComponent = () => {
         <img src="/image/menu.png" width={1500} height="auto" />
       </div>
       <div class="contentDev">
-          <img className="box1"src="/image/3web2.png" height="auto" />
+          <img className="box1"src="/image/3web2.png"/>
           <div class="box2">
             <h1 className='contentFont1'>รับออกแบบทำเว็บไซต์</h1>
             <p className='contentFont2'>เน้นความสวยงาม เรียบง่าย เป็นเอกลักษณ์</p>

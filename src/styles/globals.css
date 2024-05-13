@@ -187,25 +187,26 @@ color: aquamarine;
 }
 /* content ----------------------------------------- */
 .contentDev {
-  display: flex;          /* ตั้งค่าเป็น flex container */
-  justify-content: center; /* จัดการช่องว่างระหว่างองค์ประกอบย่อย (ออปชั่น) */
-  align-items: center;
-  height: auto; /* กำหนดความสูงของ div */
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  height: 340px;
   background-image: linear-gradient(to bottom, rgb(219, 219, 214) 25%, rgb(255, 255, 255) 75%);
 }
 .box1 {
-  position: absolute; /* ทำให้ <div> แต่ละตัวมีตำแหน่งแน่นอน */
-  width: 230px;
-  height: auto;
-  top: 179%;             /* กำหนดตำแหน่งแนวตั้ง */
-  left: 8.5%;            /* กำหนดตำแหน่งแนวนอน */
-  z-index: 4;            /* กำหนด z-index เป็น 2 */
+  margin-right: auto; /* จัดให้ชิดด้านซ้าย */
+  margin-left: 8.7%;
+  width: 200px;
+  height: 200px;
+  z-index: 4;
 }
 .box2 {
+  position: absolute; /* ทำให้ <div> แต่ละตัวมีตำแหน่งแน่นอน */
   display:grid;              /* ทำให้ <div> เป็น grid container */
   justify-items: center;      /* จัดเนื้อหาให้อยู่ตรงกลางแนวนอน */
   align-items: center;        /* จัดเนื้อหาให้อยู่ตรงกลางแนวตั้ง */
   border-radius: 20px;         /* กำหนดรัศมีความโค้งของขอบ */
+  margin-top: 80px;
   width: 80%;
   height: auto;
   padding-top: 30px;
@@ -242,33 +243,54 @@ color: aquamarine;
   
 }
 @media (max-width: 1100px) {
-  .box1 {
-    position: absolute; /* ทำให้ <div> แต่ละตัวมีตำแหน่งแน่นอน */
-    width: 150px;
-    height: auto;
-    top: 121%;             /* กำหนดตำแหน่งแนวตั้ง */
-    left: 9%;            /* กำหนดตำแหน่งแนวนอน */
-    z-index: 4;            /* กำหนด z-index เป็น 2 */
+  .contentDev {
+    display: flex;
+    justify-content: center;
+    height: 410px;
   }
-}
-@media (max-width: 600px) {
   .box1 {
-    position: absolute; /* ทำให้ <div> แต่ละตัวมีตำแหน่งแน่นอน */
-    width: 90px;
-    height: auto;
-    top: 60%;             /* กำหนดตำแหน่งแนวตั้ง */
-    left: 8.5%;            /* กำหนดตำแหน่งแนวนอน */
-    z-index: 4;            /* กำหนด z-index เป็น 2 */
+    margin-right: auto; /* จัดให้ชิดด้านซ้าย */
+    margin-left: 8%;
+    width: 200px;
+    height: 200px;
+    z-index: 4;
   }
   .box2 {
-    display: grid;              /* ทำให้ <div> เป็น grid container */
+    position: absolute; /* ทำให้ <div> แต่ละตัวมีตำแหน่งแน่นอน */
+    display:grid;              /* ทำให้ <div> เป็น grid container */
     justify-items: center;      /* จัดเนื้อหาให้อยู่ตรงกลางแนวนอน */
     align-items: center;        /* จัดเนื้อหาให้อยู่ตรงกลางแนวตั้ง */
     border-radius: 20px;         /* กำหนดรัศมีความโค้งของขอบ */
+    margin-top: 110px;
     width: 80%;
     height: auto;
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-left: 2%;
+    background-color: black;
+  }
+}
+@media (max-width: 600px) {
+  .contentDev {
+    height: 210px;
+  }
+  .box1 {
+    width: 90px;
+    height: 90px;
+    z-index: 4;            /* กำหนด z-index เป็น 2 */
+  }
+  .box2 {
+    position: absolute; /* ทำให้ <div> แต่ละตัวมีตำแหน่งแน่นอน */
+    display:grid;              /* ทำให้ <div> เป็น grid container */
+    justify-items: center;      /* จัดเนื้อหาให้อยู่ตรงกลางแนวนอน */
+    align-items: center;        /* จัดเนื้อหาให้อยู่ตรงกลางแนวตั้ง */
+    border-radius: 20px;         /* กำหนดรัศมีความโค้งของขอบ */
+    margin-top: 40px;
+    width: 80%;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 2%;
     background-color: black;
   }
   .contentFont1 {
