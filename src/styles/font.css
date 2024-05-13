@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'THSarabunNew';
+    src: url('path/to/THSarabunNew-Regular.ttf') format('truetype');
+    /* เปลี่ยน path/to/THSarabunNew-Regular.ttf เป็นที่อยู่ของไฟล์ฟอนต์ของคุณ */
+  }
